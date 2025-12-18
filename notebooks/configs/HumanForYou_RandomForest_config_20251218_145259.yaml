@@ -1,0 +1,60 @@
+deployment:
+  created_at: '2025-12-18T14:52:59.989214'
+  model_file: models\HumanForYou_RandomForest_model_20251218_145259.joblib
+  ready_for_production: true
+  scaler_file: models\HumanForYou_RandomForest_scaler_20251218_145259.joblib
+model_config:
+  hyperparameters:
+    bootstrap: true
+    ccp_alpha: 0.0
+    class_weight: balanced
+    criterion: gini
+    max_depth: 15
+    max_features: sqrt
+    max_leaf_nodes: null
+    max_samples: null
+    min_impurity_decrease: 0.0
+    min_samples_leaf: 10
+    min_samples_split: 20
+    min_weight_fraction_leaf: 0.0
+    monotonic_cst: null
+    n_estimators: 200
+    n_jobs: -1
+    oob_score: false
+    random_state: 42
+    verbose: 0
+    warm_start: false
+  type: RandomForestClassifier
+preprocessing_config:
+  features:
+  - Age
+  - BusinessTravel
+  - Department
+  - DistanceFromHome
+  - Education
+  - EducationField
+  - JobLevel
+  - JobRole
+  - MaritalStatus
+  - MonthlyIncome
+  - NumCompaniesWorked
+  - PercentSalaryHike
+  - StockOptionLevel
+  - TotalWorkingYears
+  - TrainingTimesLastYear
+  - YearsAtCompany
+  - YearsSinceLastPromotion
+  - YearsWithCurrManager
+  - JobInvolvement
+  - PerformanceRating
+  - EnvironmentSatisfaction
+  - JobSatisfaction
+  - WorkLifeBalance
+  - MeanDailyHours
+  - StdDailyHours
+  - WorkedDays
+  - TenureRatio
+  - Stability
+  - PromotionGap
+  - WorkLifeBalanceIndex
+  scaler_type: null

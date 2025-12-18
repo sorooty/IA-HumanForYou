@@ -1,0 +1,78 @@
+{
+    "model_name": "HumanForYou_RandomForest",
+    "timestamp_creation": "2025-12-18T14:53:17.071134",
+    "model_type": "RandomForestClassifier",
+    "status": "production_ready",
+    "performance_metrics": {
+        "accuracy": 0.9591836734693877,
+        "precision": 0.8840579710144928,
+        "recall": 0.8591549295774648,
+        "f1_score": 0.8714285714285714,
+        "auc_roc": 0.9854491815759422
+    },
+    "confusion_matrix": {
+        "true_negatives": 724,
+        "false_positives": 16,
+        "false_negatives": 20,
+        "true_positives": 122,
+        "specificity": 0.9783783783783784
+    },
+    "data_info": {
+        "n_features": 30,
+        "feature_names": [
+            "Age",
+            "BusinessTravel",
+            "Department",
+            "DistanceFromHome",
+            "Education",
+            "EducationField",
+            "JobLevel",
+            "JobRole",
+            "MaritalStatus",
+            "MonthlyIncome",
+            "NumCompaniesWorked",
+            "PercentSalaryHike",
+            "StockOptionLevel",
+            "TotalWorkingYears",
+            "TrainingTimesLastYear",
+            "YearsAtCompany",
+            "YearsSinceLastPromotion",
+            "YearsWithCurrManager",
+            "JobInvolvement",
+            "PerformanceRating",
+            "EnvironmentSatisfaction",
+            "JobSatisfaction",
+            "WorkLifeBalance",
+            "MeanDailyHours",
+            "StdDailyHours",
+            "WorkedDays",
+            "TenureRatio",
+            "Stability",
+            "PromotionGap",
+            "WorkLifeBalanceIndex"
+        ],
+        "test_set_size": 882,
+        "class_distribution": {
+            "class_0": 740,
+            "class_1": 142
+        }
+    },
+    "deployment_info": {
+        "framework": "scikit-learn",
+        "python_version": "3.9+",
+        "required_packages": [
+            "scikit-learn>=1.0",
+            "pandas>=1.3",
+            "numpy>=1.21",
+            "joblib>=1.1"
+        ],
+        "recommended_update_frequency": "Quarterly (tous les 3 mois)",
+        "responsible_team": "Data Science / ML Team"
+    },
+    "audit_trail": {
+        "created_by": "ML Pipeline (Automated)",
+        "last_updated": "2025-12-18T14:53:17.122170",
+        "version": "1.0.0",
+        "production_approved": false
+    }
+}
